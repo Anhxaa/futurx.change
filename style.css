@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Roboto+Serif:wght@100&family=Sail&family=Smooch+Sans:wght@100&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;1,300;1,500;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+}
+header.sticky {
+  padding-bottom: 5px;
+  background: white;
+}
+.tab {
+  text-align: right;
+  width: 85%;
+  margin: auto;
+  padding: 20px 0;
+  justify-content: space-between;
+  background-color: #111;
+  width: 100%;
+  position: relative;
+}
+header.sticky .tab ul li a {
+  color: #999;
+}
+.tab ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.tab ul li a {
+  text-decoration: none;
+  color: honeydew;
+  text-transform: uppercase;
+}
+.tab ul li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: lavenderblush;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.tab ul li:hover::after {
+  width: 100%;
+}
+.box1 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./tech1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  padding-top: 0;
+  display: table;
+  background-attachment: fixed;
+}
+.box1 p {
+  padding: 20px;
+  font-family: "ubuntu", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: rgb(149, 151, 247);
+  text-transform: capitalize;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 600;
+}
+.box3 {
+  border-top: double;
+}
+.box5,
+.box4 {
+  border-top: double;
+}
+.box2 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(tech1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  border-top: double;
+}
+.box2 p {
+  width: 65%;
+  padding: 5px;
+  font-family: "ubuntu", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(149, 236, 247);
+  text-transform: capitalize;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 600;
+}
+.box3 {
+  height: 100vh;
+  width: 70%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  display: table;
+  flex: 1;
+}
+
+.box3 h3 {
+  color: rgba(153, 153, 153, 0);
+}
+
+/* h3 {
+  font-family: "ubuntu", sans-serif;
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: #999;
+  text-transform: capitalize;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+} */
